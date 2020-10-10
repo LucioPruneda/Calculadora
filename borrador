@@ -1,0 +1,34 @@
+<input
+                    type="button"
+                    id="uno"
+                    value="1"
+                    onclick="valor(document.getElementById('uno').value)"
+                  />
+
+
+                  <button
+id="uno"
+onclick="valor(document.getElementById('uno').value)"
+class="btn badge-pill btn-block"
+>
+1
+</button>
+
+<div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-outline-secondary btn-block badge-pill"
+                    type="button"
+                    id="porcentaje"
+                    value="%"
+                    onclick="valor(document.getElementById('porcentaje').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="raiz"
+                    value="√"
+                    onclick="valor(document.getElementById('raiz').value)"
+                  />
+                </div>

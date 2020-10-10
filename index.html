@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora</title>
+    <script src="https://kit.fontawesome.com/e78872672b.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="fondo">
+    <div class="container-fluid">
+      <div class="row container-fluid p-1 d-flex">
+        <div class="col-xl-4 col-md-4 col-xs-12"></div>
+        <div
+          class="col-xl-4 col-md-4 col-xs-12 m-3 p-3 borde fondoCalcu"
+          id="calculadora"
+        >
+          <div class="container-fluid p-1">
+            <form action="">
+              <div class="form-group">
+                <input class="form-control mt-3" type="text" id="input" />
+              </div>
+              <div class="row container p-1">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block btn-outline-secondary badge-pill"
+                    type="button"
+                    id="uno"
+                    value="1"
+                    onclick="valor(document.getElementById('uno').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block btn-outline-secondary badge-pill"
+                    type="button"
+                    id="dos"
+                    value="2"
+                    onclick="valor(document.getElementById('dos').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block btn-outline-secondary badge-pill"
+                    type="button"
+                    id="tres"
+                    value="3"
+                    onclick="valor(document.getElementById('tres').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block btn-outline-secondary badge-pill"
+                    type="button"
+                    id="suma"
+                    value="+"
+                    onclick="valor(document.getElementById('suma').value)"
+                  />
+                </div>
+              </div>
+              <div class="row container p-1">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block btn-outline-secondary badge-pill"
+                    type="button"
+                    id="cuatro"
+                    value="4"
+                    onclick="valor(document.getElementById('cuatro').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block btn-outline-secondary badge-pill"
+                    type="button"
+                    id="cinco"
+                    value="5"
+                    onclick="valor(document.getElementById('cinco').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="seis"
+                    value="6"
+                    onclick="valor(document.getElementById('seis').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="resta"
+                    value="-"
+                    onclick="valor(document.getElementById('resta').value)"
+                  />
+                </div>
+              </div>
+              <div class="row container p-1">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="siete"
+                    value="7"
+                    onclick="valor(document.getElementById('siete').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="ocho"
+                    value="8"
+                    onclick="valor(document.getElementById('ocho').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="nueve"
+                    value="9"
+                    onclick="valor(document.getElementById('nueve').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="multiplicacion"
+                    value="*"
+                    onclick="valor(document.getElementById('multiplicacion').value)"
+                  />
+                </div>
+              </div>
+              <div class="row container p-1">
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="coma"
+                    value="."
+                    onclick="valor(document.getElementById('coma').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="cero"
+                    value="0"
+                    onclick="valor(document.getElementById('cero').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="exponente"
+                    value="**"
+                    onclick="valor(document.getElementById('exponente').value)"
+                  />
+                </div>
+                <div class="col-xl-3 col-md-3 col-3">
+                  <input
+                    class="btn btn-block badge-pill btn-outline-secondary"
+                    type="button"
+                    id="division"
+                    value="/"
+                    onclick="valor(document.getElementById('division').value)"
+                  />
+                </div>
+              </div>
+              <div class="row container p-1" id="resultados">
+                <div class="col-xl-4 col-md-4 col-4">
+                  <button
+                    class="btn btn-danger btn-block badge-pill"
+                    type="button"
+                    id="delete"
+                    value=""
+                    onclick="borrar(document.getElementById('delete').value)"
+                  >
+                    AC
+                  </button>
+                </div>
+                <div class="col-xl-1 col-md-1 col-1"></div>
+                <div class="col-xl-1 col-md-1 col-1"></div>
+                <div class="col-xl-5 col-md-5 col-5">
+                  <input
+                    class="btn btn-block btn-primary badge-pill"
+                    type="button"
+                    id="igual"
+                    value="="
+                    onclick="resultado()"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 col-xs-12"></div>
+      </div>
+    </div>
+    <footer class="conteiner-fluid mt-5 footer ">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-3 col-md-3 col-12 text-center">
+          <address>
+            <p>Club Logaritmo</p>
+          </address>
+          <p>Tel. 3415524688</p>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/luciopruneda/?hl=es-la "
+            ><i class="fab fa-instagram text-danger icon"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/lucio-pruneda-4827a1162?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtZjSOrk6TlGxMM47UvbgaQ%3D%3D"
+            ><i class="fab fa-linkedin-in text-primary icon"></i
+          ></a>
+          <a href="https://github.com/LucioPruneda" target="_blank" >
+            <i class="fab fa-github text-dark icon"></i>
+            
+        </a>
+        </div>
+        <div class="col-xl-3 col-md-3 col-12 text-center">
+          <p>Copyright © 1995 Lucio Pruneda</p>
+        </div>
+        
+      </div>
+    </footer>
+    <script src="estilos.js"></script>
+  </body>
+</html>
